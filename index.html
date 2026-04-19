@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vardhix AI | AI · IoT · Software · App Development</title>
+  <meta name="description"
+    content="Vardhix AI – Scaling Future with Innovation. Expert AI development, IoT integration, software engineering & mobile app development." />
+  <meta name="keywords"
+    content="AI development, IoT solutions, software development, mobile app development, tech company India" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" id="navLogo">
+        <img src="logo.png" alt="Vardhix AI" class="nav-logo-img" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta btn-primary" id="navCta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-microchip"></i>
+        <span>Scaling Future with Innovation</span>
+      </div>
+      <h1 class="hero-title">
+        Scaling Business Intelligence<br />
+        with <span class="gradient-text">Vardhix AI</span>
+      </h1>
+      <p class="hero-subtitle">
+        We are <strong>Vardhix AI</strong> — scaling businesses worldwide through intelligent AI systems, IoT
+        ecosystems,
+        enterprise software & cutting-edge mobile applications. Your growth is our purpose.
+      </p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn-primary hero-btn" id="heroExploreBtn">
+          <span>Explore Services</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#portfolio" class="btn-outline hero-btn" id="heroPortfolioBtn">
+          <span>View Portfolio</span>
+          <i class="fas fa-play-circle"></i>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat" id="heroStat1">
+          <span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat" id="heroStat2">
+          <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+          <p>Global Clients</p>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat" id="heroStat3">
+          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+          <p>Expert Members</p>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat" id="heroStat4">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+          <p>Countries Served</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS SECTION ===== -->
+  <section class="partners-section">
+    <div class="container">
+      <p class="partners-title">Technologies We Work With</p>
+      <div class="partners-slider">
+        <div class="partners-track">
+          <div class="partner-logo"><i class="fab fa-python"></i> Python</div>
+          <div class="partner-logo"><i class="fab fa-aws"></i> AWS Cloud</div>
+          <div class="partner-logo"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+              style="height:14px; margin-right:5px;" /> Flutter</div>
+          <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+              style="height:14px; margin-right:5px;" /> TensorFlow</div>
+          <div class="partner-logo"><i class="fab fa-react"></i> React JS</div>
+          <div class="partner-logo"><i class="fab fa-node-js"></i> Node.js</div>
+          <div class="partner-logo"><i class="fab fa-docker"></i> Docker</div>
+          <!-- Repeat for smooth loop -->
+          <div class="partner-logo"><i class="fab fa-python"></i> Python</div>
+          <div class="partner-logo"><i class="fab fa-aws"></i> AWS Cloud</div>
+          <div class="partner-logo"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+              style="height:14px; margin-right:5px;" /> Flutter</div>
+          <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+              style="height:14px; margin-right:5px;" /> TensorFlow</div>
+          <div class="partner-logo"><i class="fab fa-react"></i> React JS</div>
+          <div class="partner-logo"><i class="fab fa-node-js"></i> Node.js</div>
+          <div class="partner-logo"><i class="fab fa-docker"></i> Docker</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span><i class="fas fa-robot"></i> Artificial Intelligence</span>
+      <span><i class="fas fa-network-wired"></i> IoT Solutions</span>
+      <span><i class="fas fa-code"></i> Software Development</span>
+      <span><i class="fas fa-mobile-alt"></i> App Development</span>
+      <span><i class="fas fa-brain"></i> Machine Learning</span>
+      <span><i class="fas fa-cloud"></i> Cloud Integration</span>
+      <span><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+      <span><i class="fas fa-chart-line"></i> Data Analytics</span>
+      <span><i class="fas fa-robot"></i> Artificial Intelligence</span>
+      <span><i class="fas fa-network-wired"></i> IoT Solutions</span>
+      <span><i class="fas fa-code"></i> Software Development</span>
+      <span><i class="fas fa-mobile-alt"></i> App Development</span>
+      <span><i class="fas fa-brain"></i> Machine Learning</span>
+      <span><i class="fas fa-cloud"></i> Cloud Integration</span>
+      <span><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+      <span><i class="fas fa-chart-line"></i> Data Analytics</span>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-cogs"></i> What We Do</div>
+        <h2 class="section-title">Our Core <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">We deliver end-to-end technology solutions tailored to your unique business needs —
+          from concept to deployment and beyond.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" id="serviceAI" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card-glow"></div>
+          <div class="service-icon ai-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="service-badge gold">AI & ML</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Custom AI models, NLP systems, computer vision, predictive analytics, and intelligent automation that
+            transforms your business operations.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Machine Learning Models</li>
+            <li><i class="fas fa-check-circle"></i> Natural Language Processing</li>
+            <li><i class="fas fa-check-circle"></i> Computer Vision & OCR</li>
+            <li><i class="fas fa-check-circle"></i> AI-Powered Chatbots</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card featured" id="serviceIoT" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card-glow featured-glow"></div>
+          <div class="featured-tag"><i class="fas fa-star"></i> Most Popular</div>
+          <div class="service-icon iot-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="service-badge purple">IoT</div>
+          <h3>Internet of Things</h3>
+          <p>End-to-end IoT ecosystems — smart devices, embedded firmware, real-time dashboards, predictive maintenance
+            and industrial automation.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Smart Device Development</li>
+            <li><i class="fas fa-check-circle"></i> Industrial Automation</li>
+            <li><i class="fas fa-check-circle"></i> Real-Time Monitoring</li>
+            <li><i class="fas fa-check-circle"></i> Firmware & Edge Computing</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" id="serviceSoftware" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card-glow"></div>
+          <div class="service-icon sw-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="service-badge blue">Software</div>
+          <h3>Software Development</h3>
+          <p>Scalable enterprise software, SaaS platforms, ERP systems, APIs, and custom web applications built with
+            modern tech stacks.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Enterprise Solutions</li>
+            <li><i class="fas fa-check-circle"></i> API & Microservices</li>
+            <li><i class="fas fa-check-circle"></i> SaaS Platforms</li>
+            <li><i class="fas fa-check-circle"></i> Cloud-Native Apps</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" id="serviceApp" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card-glow"></div>
+          <div class="service-icon app-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="service-badge gold">App Dev</div>
+          <h3>App Development</h3>
+          <p>Beautiful, high-performance iOS and Android apps using Flutter, React Native — from MVP to enterprise-grade
+            applications.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Flutter & React Native</li>
+            <li><i class="fas fa-check-circle"></i> iOS & Android Native</li>
+            <li><i class="fas fa-check-circle"></i> UI/UX Excellence</li>
+            <li><i class="fas fa-check-circle"></i> App Store Deployment</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" id="serviceCloud" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card-glow"></div>
+          <div class="service-icon cloud-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <div class="service-badge purple">Cloud</div>
+          <h3>Cloud & DevOps</h3>
+          <p>Seamless cloud migrations, CI/CD pipelines, containerization with Docker & Kubernetes, and 24/7
+            infrastructure management.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> AWS / GCP / Azure</li>
+            <li><i class="fas fa-check-circle"></i> Docker & Kubernetes</li>
+            <li><i class="fas fa-check-circle"></i> CI/CD Automation</li>
+            <li><i class="fas fa-check-circle"></i> Infrastructure as Code</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" id="serviceCyber" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-card-glow"></div>
+          <div class="service-icon cyber-icon">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <div class="service-badge blue">Security</div>
+          <h3>Cybersecurity</h3>
+          <p>Comprehensive security audits, penetration testing, threat detection, compliance management and secure
+            architecture design.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> Penetration Testing</li>
+            <li><i class="fas fa-check-circle"></i> Threat Intelligence</li>
+            <li><i class="fas fa-check-circle"></i> Compliance Management</li>
+            <li><i class="fas fa-check-circle"></i> Incident Response</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <div class="about-glow-ring"></div>
+            <div class="about-orbit orbit-1">
+              <div class="orbit-dot"><i class="fas fa-brain"></i></div>
+            </div>
+            <div class="about-orbit orbit-2">
+              <div class="orbit-dot"><i class="fas fa-network-wired"></i></div>
+            </div>
+            <div class="about-orbit orbit-3">
+              <div class="orbit-dot"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+            <div class="about-center-icon">
+              <div class="premium-logo-inner">
+                <span class="logo-v">Vardhix</span>
+                <span class="logo-ai">AI</span>
+                <span class="logo-tag">Scaling Future with Innovation</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-floater f1"><i class="fas fa-lightbulb"></i><span>Innovation First</span></div>
+          <div class="about-floater f2"><i class="fas fa-brain"></i><span>AI Focused</span></div>
+          <div class="about-floater f3"><i class="fas fa-handshake"></i><span>Client Driven</span></div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <div class="section-tag"><i class="fas fa-building"></i> Who We Are</div>
+          <h2 class="section-title">Pioneering the <span class="gradient-text">Digital Revolution</span></h2>
+          <p class="about-lead">Vardhix AI is a premier technology company built on the belief that every business
+            deserves access to world-class AI-powered solutions. Founded by engineers and innovators, we combine
+            technical mastery with strategic vision.</p>
+          <p class="about-text">We are a passionate team of AI specialists, IoT engineers, software architects, and app
+            developers — united by the mission to scale your business with intelligent innovation. From AI-driven
+            platforms to full-scale IoT ecosystems, Vardhix AI engineers solutions that create real competitive
+            advantage.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="pillar-text">
+                <h4>Innovation First</h4>
+                <p>We embrace cutting-edge technologies to deliver tomorrow's solutions today.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-handshake"></i></div>
+              <div class="pillar-text">
+                <h4>Client Partnership</h4>
+                <p>Your goals become our mission — transparent collaboration from day one.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-medal"></i></div>
+              <div class="pillar-text">
+                <h4>Excellence Driven</h4>
+                <p>Zero compromise on quality, security, performance, and delivery timelines.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" id="aboutCta">
+            <span>Partner With Us</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECH STACK ===== -->
+  <section class="techstack section-pad" id="tech">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-layer-group"></i> Technology</div>
+        <h2 class="section-title">Our <span class="gradient-text">Tech Stack</span></h2>
+        <p class="section-subtitle">We master the world's most powerful technologies to build exceptional products.</p>
+      </div>
+      <div class="tech-tabs" data-aos="fade-up">
+        <button class="tech-tab active" data-tab="ai" id="tabAI">AI & ML</button>
+        <button class="tech-tab" data-tab="mobile" id="tabMobile">Mobile</button>
+        <button class="tech-tab" data-tab="web" id="tabWeb">Web</button>
+        <button class="tech-tab" data-tab="cloud" id="tabCloud">Cloud</button>
+        <button class="tech-tab" data-tab="iot" id="tabIoT">IoT</button>
+      </div>
+      <div class="tech-panels">
+        <div class="tech-panel active" id="panelAi">
+          <div class="tech-items">
+            <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="tech-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"
+                alt="TensorFlow" /><span>TensorFlow</span></div>
+            <div class="tech-item"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg"
+                alt="PyTorch" /><span>PyTorch</span></div>
+            <div class="tech-item"><i class="fas fa-robot" style="color:#f59e0b"></i><span>OpenAI API</span></div>
+            <div class="tech-item"><i class="fas fa-database" style="color:#7c3aed"></i><span>Vector DB</span></div>
+            <div class="tech-item"><i class="fas fa-eye" style="color:#3b82f6"></i><span>OpenCV</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="panelMobile">
+          <div class="tech-items">
+            <div class="tech-item"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+                alt="Flutter" /><span>Flutter</span></div>
+            <div class="tech-item"><i class="fab fa-react" style="color:#61dafb"></i><span>React Native</span></div>
+            <div class="tech-item"><i class="fab fa-android" style="color:#3ddc84"></i><span>Android</span></div>
+            <div class="tech-item"><i class="fab fa-apple" style="color:#ffffff"></i><span>iOS / Swift</span></div>
+            <div class="tech-item"><i class="fas fa-fire" style="color:#f59e0b"></i><span>Firebase</span></div>
+            <div class="tech-item"><i class="fas fa-store" style="color:#7c3aed"></i><span>Play / App Store</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="panelWeb">
+          <div class="tech-items">
+            <div class="tech-item"><i class="fab fa-react" style="color:#61dafb"></i><span>React.js</span></div>
+            <div class="tech-item"><i class="fab fa-node-js" style="color:#339933"></i><span>Node.js</span></div>
+            <div class="tech-item"><i class="fab fa-js" style="color:#f7df1e"></i><span>JavaScript</span></div>
+            <div class="tech-item"><i class="fab fa-html5" style="color:#e34f26"></i><span>HTML5</span></div>
+            <div class="tech-item"><i class="fab fa-css3-alt" style="color:#264de4"></i><span>CSS3</span></div>
+            <div class="tech-item"><i class="fas fa-database" style="color:#3b82f6"></i><span>PostgreSQL</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="panelCloud">
+          <div class="tech-items">
+            <div class="tech-item"><i class="fab fa-aws" style="color:#f59e0b"></i><span>AWS</span></div>
+            <div class="tech-item"><i class="fab fa-google" style="color:#4285F4"></i><span>Google Cloud</span></div>
+            <div class="tech-item"><i class="fab fa-microsoft" style="color:#0078D4"></i><span>Azure</span></div>
+            <div class="tech-item"><i class="fab fa-docker" style="color:#2496ED"></i><span>Docker</span></div>
+            <div class="tech-item"><i class="fas fa-dharmachakra" style="color:#326CE5"></i><span>Kubernetes</span>
+            </div>
+            <div class="tech-item"><i class="fas fa-code-branch" style="color:#7c3aed"></i><span>CI/CD</span></div>
+          </div>
+        </div>
+        <div class="tech-panel" id="panelIot">
+          <div class="tech-items">
+            <div class="tech-item"><i class="fas fa-microchip" style="color:#f59e0b"></i><span>Arduino</span></div>
+            <div class="tech-item"><i class="fas fa-raspberry-pi" style="color:#C51A4A"></i><span>Raspberry Pi</span>
+            </div>
+            <div class="tech-item"><i class="fas fa-wifi" style="color:#7c3aed"></i><span>MQTT</span></div>
+            <div class="tech-item"><i class="fas fa-server" style="color:#3b82f6"></i><span>Edge Computing</span></div>
+            <div class="tech-item"><i class="fas fa-signal" style="color:#f59e0b"></i><span>LoRaWAN</span></div>
+            <div class="tech-item"><i class="fas fa-industry" style="color:#7c3aed"></i><span>Industrial IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio section-pad" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-briefcase"></i> Our Work</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A showcase of our most impactful work across AI, IoT, and software domains.</p>
+      </div>
+      <div class="portfolio-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Projects</button>
+        <button class="filter-btn" data-filter="ai" id="filterAI">AI / ML</button>
+        <button class="filter-btn" data-filter="iot" id="filterIoT">IoT</button>
+        <button class="filter-btn" data-filter="app" id="filterApp">Mobile App</button>
+        <button class="filter-btn" data-filter="software" id="filterSoftware">Software</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card" data-category="ai" data-aos="fade-up">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #1e1b4b, #7c3aed);">
+            <div class="portfolio-icon"><i class="fas fa-brain"></i></div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">AI / ML</span>
+            <h3>Enterprise AI Strategy</h3>
+            <p>Custom AI integration strategies for business process automation. Case study details coming soon.</p>
+            <div class="portfolio-tech"><span>Python</span><span>OpenAI</span><span>FastAPI</span></div>
+            <a href="#contact" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="iot" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #0c1445, #3b82f6);">
+            <div class="portfolio-icon"><i class="fas fa-industry"></i></div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">IoT</span>
+            <h3>Smart Monitoring Systems</h3>
+            <p>Real-time data acquisition and monitoring for industrial equipment. Project documentation coming soon.
+            </p>
+            <div class="portfolio-tech"><span>MQTT</span><span>Node.js</span><span>React</span></div>
+            <a href="#contact" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="app" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #1a0533, #9333ea);">
+            <div class="portfolio-icon"><i class="fas fa-mobile-alt"></i></div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">Mobile App</span>
+            <h3>Custom Flutter Solutions</h3>
+            <p>Scaleable cross-platform mobile applications tailored for business growth. Portfolio update in progress.
+            </p>
+            <div class="portfolio-tech"><span>Flutter</span><span>Firebase</span><span>Dart</span></div>
+            <a href="#contact" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="software" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #0a1628, #1e3a8a);">
+            <div class="portfolio-icon"><i class="fas fa-chart-bar"></i></div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">Software</span>
+            <h3>Enterprise ERP Suite</h3>
+            <p>Custom ERP system with 20+ modules for a multinational company across 8 countries.</p>
+            <div class="portfolio-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            <a href="#contact" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="ai" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #1c1400, #d97706);">
+            <div class="portfolio-icon"><i class="fas fa-comments"></i></div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">AI / ML</span>
+            <h3>Conversational AI Platform</h3>
+            <p>Multilingual NLP chatbot handling 50K daily interactions with 94% satisfaction rate.</p>
+            <div class="portfolio-tech"><span>OpenAI</span><span>LangChain</span><span>FastAPI</span></div>
+            <a href="#contact" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="iot" data-aos="fade-up" data-aos-delay="500">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #0d2818, #16a34a);">
+            <div class="portfolio-icon"><i class="fas fa-leaf"></i></div>
+          </div>
+          <div class="portfolio-overlay">
+            <span class="portfolio-tag">IoT</span>
+            <h3>Smart Agriculture System</h3>
+            <p>Precision farming IoT solution with automated irrigation, drone monitoring, and crop analytics.</p>
+            <div class="portfolio-tech"><span>Raspberry Pi</span><span>MQTT</span><span>AI Vision</span></div>
+            <a href="#contact" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us section-pad" id="whyus">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-award"></i> Our Advantage</div>
+        <h2 class="section-title">Why Industry Leaders <span class="gradient-text">Choose Us</span></h2>
+        <p class="section-subtitle">We don't just deliver software — we create competitive advantages that define market
+          leaders.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Agile Delivery</h3>
+          <p>Sprint-based development with weekly demos. Faster time-to-market with zero surprises.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon"><i class="fas fa-lock"></i></div>
+          <h3>Security-First</h3>
+          <p>Enterprise-grade security baked in from day one — not an afterthought.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+          <h3>Infinitely Scalable</h3>
+          <p>Architecture designed to scale from startup to enterprise without painful rewrites.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Dedicated support team with guaranteed SLAs. We're always in your corner.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="why-icon"><i class="fas fa-dollar-sign"></i></div>
+          <h3>Transparent Pricing</h3>
+          <p>No hidden costs. Fixed-price projects or flexible retainer models that fit your budget.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="why-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Certified Experts</h3>
+          <p>AWS, Google Cloud, Azure certified engineers. Industry-recognized expertise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats-section" id="stats">
+    <div class="stats-bg"></div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="zoom-in">
+          <div class="stat-circle">
+            <span class="stat-counter" data-target="15">0</span><span>+</span>
+          </div>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-circle">
+            <span class="stat-counter" data-target="10">0</span><span>+</span>
+          </div>
+          <p>Innovative Vision</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-circle">
+            <span class="stat-counter" data-target="100">0</span><span>%</span>
+          </div>
+          <p>Dedication</p>
+        </div>
+        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-circle">
+            <span class="stat-counter" data-target="100">0</span><span>%</span>
+          </div>
+          <p>Quality First</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS SECTION ===== -->
+  <section class="process section-pad" id="process">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-project-diagram"></i> Workflow</div>
+        <h2 class="section-title">How We <span class="gradient-text">Deliver Excellence</span></h2>
+        <p class="section-subtitle">Our systematic approach ensures your project scales from a vision to a world-class
+          digital product.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-line"></div>
+        <div class="step-card" data-aos="fade-right">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h4>Discovery & Strategy</h4>
+            <p>We dive deep into your business goals, identify pain points, and craft a roadmap for AI and IoT
+              integration.</p>
+          </div>
+        </div>
+        <div class="step-card" data-aos="fade-left" data-aos-delay="100">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h4>Smart Design & Prototyping</h4>
+            <p>Our UX experts create high-fidelity designs and rapid prototypes focused on scalability and user
+              engagement.</p>
+          </div>
+        </div>
+        <div class="step-card" data-aos="fade-right" data-aos-delay="200">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h4>Agile Development</h4>
+            <p>Using the latest tech stacks (Flutter, Python, React), we build your solution in transparent, iterative
+              sprints.</p>
+          </div>
+        </div>
+        <div class="step-card" data-aos="fade-left" data-aos-delay="300">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h4>Precision Scaling</h4>
+            <p>Post-launch, we utilize AI analytics to optimize performance and scale your platform to millions of
+              users.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM SECTION ===== -->
+  <section class="team section-pad" id="team">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-users"></i> Our People</div>
+        <h2 class="section-title">Meet the <span class="gradient-text">Visionaries</span></h2>
+        <p class="section-subtitle">Brilliant minds united by one passion — building technology that changes the world.
+        </p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100" id="teamCard1">
+          <div class="team-img-wrap">
+            <div class="team-avatar av1"><i class="fas fa-user-tie"></i></div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Er. Dev Kumar Singh</h3>
+            <span class="team-role">Founder & CEO | B.Tech AI & DS</span>
+            <p>Visionary technologist leading Vardhix AI with a deep focus on Artificial Intelligence and Data Science
+              to solve complex business challenges.</p>
+          </div>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200" id="teamCard2">
+          <div class="team-img-wrap">
+            <div class="team-avatar av2" style="background: linear-gradient(135deg, #4f46e5, #9333ea);"><i
+                class="fas fa-user-graduate"></i></div>
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Er. Shweta Kumari</h3>
+            <span class="team-role">Co-Founder & Lead Engineer | B.Tech IT</span>
+            <p>Academic topper and IT expert driving technical excellence and high-performance software architectures at
+              Vardhix AI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-quote-left"></i> Client Stories</div>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-subtitle">Real results. Real satisfaction. Hear from the leaders who chose Vardhix AI.</p>
+      </div>
+      <div class="testimonials-slider" data-aos="fade-up">
+        <div class="testi-card premium-coming-soon">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="coming-soon-content">
+            <div class="coming-soon-icon">
+              <i class="fas fa-stars"></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3>Client Stories Coming Soon</h3>
+            <p class="testi-text">We're just getting started! We focus on delivering high-quality solutions before
+              gathering reviews. Stay tuned for real success stories from our early partners.</p>
+            <div class="coming-soon-badge">Innovation in Progress</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Remarkable</span></h2>
+        <p class="section-subtitle">Tell us about your project. We'll respond within 24 hours with a tailored proposal.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <h4>Our Headquarters</h4>
+                <p>Vardhix AI HQ, Bengaluru<br />Karnataka, India</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="ci-text">
+                <h4>Call Us Directly</h4>
+                <p>+91 9608446437<br />+91 8677991204</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <h4>Email Address</h4>
+                <p>vardhixai.@gmail.com<br />devsingh0050@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="fas fa-clock"></i></div>
+              <div class="ci-text">
+                <h4>Business Hours</h4>
+                <p>Mon – Fri: 9:00 AM – 7:00 PM IST<br />24/7 Support for Enterprise Clients</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="https://www.linkedin.com/in/vardhix-ai/" class="cs-link" aria-label="LinkedIn"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="cs-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/vardhixai" class="cs-link" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <a href="#" class="cs-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 91533 13123" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a Service</option>
+                <option value="ai">Artificial Intelligence & ML</option>
+                <option value="iot">IoT Solutions</option>
+                <option value="software">Software Development</option>
+                <option value="app">Mobile App Development</option>
+                <option value="cloud">Cloud & DevOps</option>
+                <option value="cyber">Cybersecurity</option>
+                <option value="other">Other / Multiple</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit" id="formSubmit">
+              <span>Send Your Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <p>Your message has been sent! We'll be in touch within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="logo.png" alt="Vardhix AI" class="footer-logo-img" />
+            </div>
+            <p class="footer-tagline">Scaling Future with Innovation. Your trusted technology partner for AI, IoT,
+              Software & App development — worldwide.</p>
+
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Artificial Intelligence</a></li>
+              <li><a href="#services">IoT Development</a></li>
+              <li><a href="#services">Software Development</a></li>
+              <li><a href="#services">Mobile App Development</a></li>
+              <li><a href="#services">Cloud & DevOps</a></li>
+              <li><a href="#services">Cybersecurity</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonials">Client Stories</a></li>
+              <li><a href="#contact">Careers</a></li>
+              <li><a href="#contact">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India</li>
+              <li><i class="fas fa-phone"></i> +91 9608446437</li>
+              <li><i class="fas fa-envelope"></i> hello@vardhixai.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Vardhix AI Pvt. Ltd. | All rights reserved. | <em>Scaling Future with Innovation</em></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
