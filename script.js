@@ -227,24 +227,59 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== CONTACT FORM =====
   const contactForm = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = document.getElementById('formSubmit');
-    btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
-    btn.style.pointerEvents = 'none';
-    setTimeout(() => {
-      btn.innerHTML = '<span>Message Sent!</span><i class="fas fa-check"></i>';
-      btn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
-      formSuccess.classList.add('show');
-      contactForm.reset();
-      setTimeout(() => {
-        btn.innerHTML = '<span>Send Your Message</span><i class="fas fa-paper-plane"></i>';
-        btn.style.background = '';
-        btn.style.pointerEvents = '';
-        formSuccess.classList.remove('show');
-      }, 4000);
-    }, 1800);
-  });
+  
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('formSubmit');
+      const originalBtnContent = btn.innerHTML;
+      
+      // Update UI to show sending state
+      btn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+      btn.style.pointerEvents = 'none';
+
+      try {
+        const formData = new FormData(contactForm);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        });
+
+        const result = await response.json();
+
+        if (response.status == 200) {
+          // Success
+          btn.innerHTML = '<span>Message Sent!</span><i class="fas fa-check"></i>';
+          btn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
+          formSuccess.classList.add('show');
+          contactForm.reset();
+        } else {
+          // Error from API
+          console.log(result);
+          btn.innerHTML = '<span>Error Occurred</span><i class="fas fa-exclamation-triangle"></i>';
+        }
+      } catch (error) {
+        // Network error
+        console.log(error);
+        btn.innerHTML = '<span>Error Occurred</span><i class="fas fa-exclamation-triangle"></i>';
+      } finally {
+        // Revert button after delay
+        setTimeout(() => {
+          btn.innerHTML = originalBtnContent;
+          btn.style.background = '';
+          btn.style.pointerEvents = '';
+          formSuccess.classList.remove('show');
+        }, 5000);
+      }
+    });
+  }
 
   // ===== BACK TO TOP =====
   document.getElementById('backToTop').addEventListener('click', () => {
