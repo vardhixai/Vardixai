@@ -186,8 +186,9 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
       const filter = btn.dataset.filter;
       portfolioCards.forEach(card => {
-        const cat = card.dataset.category;
-        if (filter === 'all' || cat === filter) {
+        const catString = card.dataset.category || '';
+        const cats = catString.split(' ');
+        if (filter === 'all' || cats.includes(filter)) {
           card.style.display = '';
           setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'scale(1)'; }, 10);
         } else {
